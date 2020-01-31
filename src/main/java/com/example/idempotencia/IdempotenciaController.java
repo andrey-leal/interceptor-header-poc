@@ -11,6 +11,6 @@ public class IdempotenciaController {
     @GetMapping
     public ResponseEntity getIdempotencia(@RequestHeader("transactionId") String transactionId,
                                           @RequestHeader("canal") String canal) {
-        return ResponseEntity.status(HttpStatus.OK).header("transactionCompleted", transactionId).build();
+        return ResponseEntity.status(HttpStatus.OK).header("transactionCompletede", transactionId).build();
     }
 }
